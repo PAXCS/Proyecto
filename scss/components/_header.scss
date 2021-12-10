@@ -1,3 +1,5 @@
+/* Anidamiento */
+
 header {
 
     nav{
@@ -32,7 +34,7 @@ header {
     }
 }
 
-/* Display flex*/
+/* Contenedor de navbar desplegable */
 .boxConteinerLinks {
     background-color: black;
     font-size: 2rem;
@@ -46,9 +48,10 @@ header {
    
 }
 
+/* Estilo del logo principal del menú*/
 .logoS {
     position: fixed;
-    display: flex;
+    display: flex;    
     justify-content:left;
     align-items: center;
     padding-left: 0;
@@ -57,6 +60,7 @@ header {
     z-index: 40;
     
 }
+
 
 .imagenLogo {
     padding: 10px 10px;
@@ -83,9 +87,10 @@ header {
 
 .nav-item {
     padding-left: 50px;
+    
 }
 
-/* Display flex utilizado Los titulos header, encanbezados centrados de cada sitio*/
+/* Estilos aplicados a los títulos principales */
 .tituloPrincipal {
     text-align: center;
     align-items: center;
@@ -106,5 +111,4 @@ header {
 h1 {
     display: flex;
     justify-content: center;
-}
-
+};

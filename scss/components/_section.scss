@@ -1,6 +1,6 @@
 @import "../base/extends";
 
-/* Espacio superior para emprolijar la secciones*/
+/* Estilos de los subtitulos */
 section {
     margin-top: 70px;
 }
@@ -27,7 +27,7 @@ section {
 
 };
 
-/* Tesxto introductorio al juego con un estilo diferente al resto de los textos existentes*/
+/* Texto introductorio (copete) al juego con un estilo diferente al resto de los textos existentes */
 .Historia {
     text-align: justify;
     text-decoration: none;
@@ -38,7 +38,7 @@ section {
     
 };
 
-/*Acá se aplica flexbox*/
+/* Apartado noticias */
 .Noticias {
     padding: 10px 10px;
     margin: 10px 10px;
@@ -54,7 +54,8 @@ section {
 
 }
 
-/* Acá puse los datos para centrar los videos, mi idea es alinear uno al lado del otro pero no encontré coo hacerlo*/
+/* Estilo de los videos */
+
 .video {
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +65,7 @@ section {
     
    }
 
-/* Estilo de las imágenes con flex box*/
+/* Estilo de las imágenes */
 
 .imagen {
     width: 100%;
