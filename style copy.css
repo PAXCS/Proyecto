@@ -1,0 +1,414 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Press+Start+2P&family=Zen+Kurenaido&display=swap');
+
+/* Selector Universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+   
+}
+/* Body */
+/* Tengo intenciones que la imagen de fondo sea animada, por ahora va una imagen fija*/
+
+
+
+body {
+    background-image: url(Multimedia/Imagenes/black-marble-patterned-texture-background-marble-of-thailand-abstract-natural-marble-black-and-white-for-design.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+/* Fin de imagen de fondo del body*/
+
+/* Estilo del fondo del header con los links*/
+
+nav {
+    padding-top: 0.2px;
+    margin-bottom: 20px;
+    
+}
+
+/* Display flex*/
+.boxConteinerLinks {
+    background-color: black;
+    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    display: none;
+    justify-content: right;
+    z-index: 20;
+    padding: 15px 3px 20px 3px;
+    
+   
+}
+  
+header nav ul li{
+
+    padding: 0px 10px;
+        
+}
+
+header nav ul li a {
+    
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: none;
+    transition: all 1s;
+}
+
+header nav ul li a:hover {
+    background-color: cornsilk;
+    padding: 5px 5px;
+    border-radius: 25px;
+    background-image: linear-gradient( red, white);
+    
+}
+
+/* Logo S menu donde iría el menú desplegable*/
+/* Se uso display flex */
+
+.logoS {
+    position: fixed;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 10px;
+    background-image: url(/Multimedia/Imagenes/espacio.jpg);
+    width: 100%;
+    z-index: 40;
+    
+}
+
+.imagenLogo {
+    padding: 10px 10px;
+    
+    background-color: black;
+}
+
+.imagenLogo:hover {
+    
+        transform: scale(1) translate(10px, 10px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+       
+}
+
+.dropdown {
+    padding-left: 450px;
+}
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 2rem;
+    
+
+   }
+
+     
+/* Display flex utilizado Los titulos header, encanbezados centrados de cada sitio*/
+
+.tituloPrincipal {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 150px 0 30px;
+    padding-top: 10px;
+    color: rgb(216, 216, 160);
+    font-size: 10rem;
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    border: 4px solid rgb(189, 41, 41);
+    border-radius: 25px;
+}
+
+
+/* Espacio superior para emprolijar la secciones*/
+section {
+    margin-top: 70px;
+}
+
+/* Fin del header*/
+
+/* Alineación de los parrafos */
+
+p {
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+/* Tesxto introductorio al juego con un estilo diferente al resto de los textos existentes*/
+.Historia {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 38px;
+    color: ivory;
+    font-style: italic;
+    font-family: 'Electrolize', sans-serif
+    
+}
+
+/* Segunda seccion, con los modos de juego */
+.modosContenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    gap: 20px;
+    grid-template-areas: 
+    'video1 video2 video3'
+    'tituloModo1 tituloModo2 tituloModo3'
+    'descripcion1 descripcion2 descripcion3';
+}
+
+.video1 {
+    grid-area: video1;
+  
+}
+.video2 {
+    grid-area: video2;
+    
+   
+}
+
+.video3 {
+    grid-area: video3;
+
+}
+
+.tituloModo1 {
+    grid-area: tituloModo1;
+    padding-top: 35px;
+
+}
+
+.tituloModo2 {
+    grid-area: tituloModo2;
+    padding-top: 35px;
+}
+
+.tituloModo3 {
+    grid-area: tituloModo3;
+}
+.descripcion1 {
+    grid-area: descripcion1;
+
+}
+
+.descripcion2 {
+    grid-area: descripcion2;
+}
+
+.descripcion3 {
+    grid-area: descripcion3;
+}
+
+
+/* Subtitulo */
+.modos {
+    text-align-last: center;
+    color: rgb(216, 216, 160);
+    font-size: 7.5rem;
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    margin: 80px 0;
+}
+
+
+/* Titulos de las noticias*/
+
+.tituloNoticias {
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 5rem;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    
+}
+
+.tituloModo1 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 5.5rem;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    
+}
+
+.tituloModo2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 5.5rem;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    
+}
+
+.tituloModo3 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 5.5rem;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+    
+}
+
+.tituloModo {
+    text-align: center;
+    text-decoration: none;
+    font-size: 5.5rem;
+    color: rgb(216, 216, 160);
+    -webkit-text-fill-color: rgb(189, 41, 41);
+    -webkit-text-stroke: 0.1px;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 10px;
+}
+
+/* Acá se aplica flexbox*/
+.Noticias {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.contactoCuerpo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 100%;
+    
+
+}
+    
+    
+/* Acá puse los datos para centrar los videos, mi idea es alinear uno al lado del otro pero no encontré coo hacerlo*/
+video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: block
+    
+   }
+
+/* Estilo de las imágenes con flex box*/
+
+.imagen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+ 
+    
+    
+}
+
+/* Estas son las descripciones que van debajo de cada video de modo y el resto de los textos en general*/
+p {
+    text-align: justify;
+    font-size: 2.5rem;
+    color: ivory;
+    font-family: 'Electrolize', sans-serif;
+    
+     
+}
+/* Fin del contenido principal*/
+
+/* Estilos de footer con flex box aplicado*/
+
+#redes {
+   
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    background-image: url(/Multimedia/Imagenes/espacio.jpg);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+#redes a img:hover {
+    background-color: cornsilk;
+    padding: 5px;
+    transform: scale(1);
+}
+
+/* Fin del footer*/
+
+/* Media queries */
+
+@media screen and (max-width: 768px)
+ {
+    
+       .modosContenedor {
+        display: flex;
+        flex-direction: column;  }
+        
+        .Noticias {
+        
+            flex-direction: column; }
+        
+        .boxConteinerLinks {
+                
+                font-size: 3rem;
+                position:relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                z-index: 20;
+                padding: 15px 3px 10px 3px; }
+
+        .logoS {
+            display: none;
+        }
+        html {
+            width: fit-content;
+        }
+    }

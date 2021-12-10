@@ -1,0 +1,54 @@
+@media screen and (max-width: 1200px)
+ {
+    
+       .modosContenedor {
+            display:flex;
+            flex-direction: column;
+        
+       }
+
+       .contactoCuerpo {
+           display: flex;
+           justify-content: left;
+       }
+
+      
+        .Noticias {
+        
+            flex-direction: column; }
+        
+        .boxConteinerLinks {
+                background-image: url(/Multimedia/Imagenes/espacio.jpg);
+                font-size: 3rem;
+                position:fixed;
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 20;
+                padding: 15px 3px 10px 3px; }
+
+        .logoS {
+            display: none;
+        }
+
+        .tituloPrincipal {
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-right: 80px 80px;
+        }
+
+       /* html {
+            width: fit-content;
+        }*/
+       
+    }
+
+    @media screen and (max-width: 980px)
+        {
+            html {
+                width:fit-content;
+            }
+        }

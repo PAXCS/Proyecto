@@ -1,0 +1,79 @@
+@import "../base/extends";
+
+/* Espacio superior para emprolijar la secciones*/
+section {
+    margin-top: 70px;
+}
+
+.modos, .tituloModo, .tituloNoticias, .tituloModo1, .tituloModo2, .tituloModo3 {
+    @extend %titulostodos;
+
+};
+
+.modos {
+    font-size: 7.5rem;
+
+};
+
+.tituloModo,.tituloModo1, .tituloModo2, .tituloModo3  {
+    font-size: 5.5rem;
+    text-decoration: none;
+    text-align: center;
+
+};
+
+.tituloNoticias {
+    font-size: 5rem;
+
+};
+
+/* Tesxto introductorio al juego con un estilo diferente al resto de los textos existentes*/
+.Historia {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 38px;
+    color: ivory;
+    font-style: italic;
+    font-family: 'Electrolize', sans-serif
+    
+};
+
+/*Acá se aplica flexbox*/
+.Noticias {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.contactoCuerpo {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 100%;
+    
+
+}
+
+/* Acá puse los datos para centrar los videos, mi idea es alinear uno al lado del otro pero no encontré coo hacerlo*/
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: block
+    
+   }
+
+/* Estilo de las imágenes con flex box*/
+
+.imagen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;      
+    
+};
